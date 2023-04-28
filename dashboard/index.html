@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <title>Dashboard</title>
+	  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="dark_mode">
+
+
+<div id="page_wrapper">
+  <div id="sidenav" class="sidenav">
+    <div class="sidenav_header">
+      <div class="logo_section">
+        
+        <h3>DASHBOARD</h3>
+      </div>
+      
+      <a href="#" class="sidenav_link active">
+        <i class="fa-solid fa-cart-shopping icon"></i>
+        <h3>Product</h3>
+      </a>
+      
+      <a href="#" class="sidenav_link">
+        <i class="fa-solid fa-user icon"></i>
+        <h3>User</h3>
+      </a>
+
+
+    </div>
+    <div class="sidenav_footer">
+      <a href="#" class="sidenav_link">
+        <i class="fa-solid fa-right-from-bracket icon"></i>
+        <h3>LOG OUR</h3>
+      </a>
+    </div>
+    
+      <button id="nav_collapse_btn">
+        <i class='bx bxs-chevrons-left'></i>
+      </button>
+    </div>
+  
+    
+  <main>
+    <header>
+      <div class="text">
+        <h2>Product</h2>
+      <table>
+  <form action="" id="form">
+    <input class="input" type="text" name="name" placeholder="Product Name" id="name">
+    <input class="input" type="text" name="price" placeholder="Product Price" id="price">
+    <input class="input" type="text" name="qty" placeholder="Product Qty" id="qty">
+    <input class="input" type="text" name="desc" placeholder="Product Description" id="desc">
+    <input class="input" type="text" name="img" placeholder="Product Img" id="img">
+    <input class="input" type="text" name="category" placeholder="Product Category" id="category">
+    <button class="submit" id="submit" type="submit">Submit</button>
+    <button class="submit clear" id="clear" type="button">Clear</button>
+  </form>
+  <thead>
+    <tr>
+      <th scope="col" width="50px">ID</th>
+      <th scope="col" width="100px">Name</th>
+      <th scope="col" width="290px">Category</th>
+      <th scope="col">Price</th>
+      <th scope="col">Qty</th>
+      <th scope="col">Description</th>
+      <th scope="col" width="70px">Img</th>
+      <th scope="col">Manipulate</th>
+    </tr>
+  </thead>
+  <tbody id="tbody">
+    <tr>
+      <td data-label="ID">#3412</td>
+      <td data-label="Name">Manoj</td>
+      <td data-label="Category">ispum</td>
+      <td data-label="Price">$64.00</td>
+      <td data-label="Qty">640</td>
+      <td data-label="Desc" style="position: relative;">Lorem ispum dummy text industry.</td>
+      <td data-label="Img">IMG</td>
+      <td>
+        <button class="edit-btn">Edit</button>
+        <button class="delete-btn">Delete</button>
+      </td>
+    </tr>
+
+    <tr>
+      <td data-label="ID">#3412</td>
+      <td data-label="Name">Manoj</td>
+      <td data-label="Category">ispum</td>
+      <td data-label="Price">$64.00</td>
+      <td data-label="Qty">640</td>
+      <td data-label="Desc" style="position: relative;">Lorem ispum dummy text industry.</td>
+      <td data-label="Img">IMG</td>
+      <td>
+        <button class="edit-btn">Edit</button>
+        <button class="delete-btn"">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <div>
+        <button id="theme_switch">
+          <i class='bx bx-sun'></i>
+        </button>
+      </div>
+    </header>
+    
+    
+  </main>
+  
+  
+</div>
+
+<script type="module" src="js/script.js"></script>
+</body>
+</html>
