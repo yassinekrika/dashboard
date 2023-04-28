@@ -13,7 +13,7 @@ export const getProduct = async (req, res) => {
 }
 
 // createProduct
-export async function createProduct (req, res) {
+export const createProduct = async (req, res) => {
     
     const query = `INSERT INTO products (product_id, 
         product_name, 

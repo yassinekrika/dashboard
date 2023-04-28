@@ -165,7 +165,7 @@ async function createProduct(e) {
                 .catch(err => err)
                 
                 console.log(result)
-                displayProduct()
+                window.location.reload();
             }
             clear()
         } else {
@@ -180,7 +180,7 @@ async function createProduct(e) {
             .catch(err => err)
             
             // diplay product
-            displayProduct()
+            window.location.reload();
             clear()
         }
     }
@@ -202,7 +202,7 @@ async function deleteProduct(e) {
         .catch(err => err)
         
         // diplay product
-        displayProduct()
+        window.location.reload();
     }
 }
 
